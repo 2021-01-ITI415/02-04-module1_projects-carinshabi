@@ -23,8 +23,17 @@ public class AppleTree : MonoBehaviour {
         //Dropping apples every second      
     }
 
-    void Update()   {  
+    void Update()   {
         // Basic Movement
+        Vector3 pos = transform.position;
+        pos.x += speed * Time.deltaTime;
+        transform.position = pos;
+
         // Changing Direction
+        if ( pos.x < -leftAndRightEdge ) {
+            speed = Mathf.Abs(speed);  // Move right
+        } else if ( pos.x > leftAndRightEdge ) {
+            speed = -Mathf.Abs(speed);  // Move left
+        }
     }
-}
+} 
