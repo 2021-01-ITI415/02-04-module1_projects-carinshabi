@@ -115,7 +115,7 @@ public class MissionDemolition : MonoBehaviour {
     }
 
     // Static method that allows code anywhere to increment shotsTaken
-    public static void ShotsFired() {
+    public static void ShotFired() {
         S.shotsTaken++;
     }
 
