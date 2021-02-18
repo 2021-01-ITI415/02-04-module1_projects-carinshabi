@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Apple
   - Projectile
+  - Body
+  - Wall
   layers:
   - Default
   - TransparentFX
